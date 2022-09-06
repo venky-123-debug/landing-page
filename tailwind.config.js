@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    '*.html',
-    '*/**.{html,css,js}',
-    './components/*.html'
+    './public/*.{html,css,js}',
+    // '*/**.{html,css,js}',
+    // './components/*.html'
   ],
   theme: {
     screens: {
@@ -12,9 +12,11 @@ module.exports = {
       lg: '976px',
       xl: '1440px'
     },
-    extend: {
+    extend: {'dark-bg': "url(icons/night-bg.png)",
       colors: {
         transparent: 'transparent',
+        'gray-500':'#6b7280',
+        'gray-100':'#374151',
         'blue': '#1fb6ff',
         'purple': '#7e5bef',
         'pink': '#ff49db',
@@ -37,9 +39,6 @@ module.exports = {
         veryLightGray: 'hsl(0, 0%, 98%)',
       },
     },
-    plugins: [
-      require('tailgrids/plugin')
-
-    ],
+    plugins: [],
   }
 }
