@@ -37,6 +37,9 @@ module.exports = {
         veryLightGray: 'hsl(0, 0%, 98%)',
       },
     },
-    plugins: [],
+    plugins: [
+      require('tailgrids/plugin')
+
+    ],
   }
 }
